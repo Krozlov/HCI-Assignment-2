@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation Form</title>
+    <style>
+        body {
+            background-image: url("foodbg.jpg"); /* background image */
+            background-size: cover;
+            font-family: 'Kumbh Sans', sans-serif;
+        }
+
+        form {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff; /* colored background */
+        }
+    </style>
+</head>
+<body>
+    <h1>Reservation Form (˵ ͡° ͜ʖ ͡°˵)</h1>
+
+    <form action ="action_page.php" method="GET">
+        <label for="name">Name ( ✧Д✧) YES!!:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email (〃ﾟ3ﾟ〃):</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="phone">Phone Number (☞ ͡ ͡° ͜ ʖ ͡ ͡°)☞:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="date">Reservation Date ☆(ﾉ◕ヮ◕)ﾉ*:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="time">Reservation Time ヾ(＾-＾)ノ:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <label for="num_guests">Number of Guests (≧∇≦)/:</label>
+        <input type="number" id="num_guests" name="num_guests"><br><br>
+
+        <label for="special_request">Custom Orders ｡>‿‿<｡:</label><br>
+        <textarea id="special_request" name="special_request"></textarea><br><br>
+
+        <input type="submit" value="Submit Form">
+        
+        <input type="reset" value ="Reset Form">
+    </form>
+
+    <h2>Menu</h2>
+    <table>
+        <tr bgcolor = "grey">
+            <th colspan="2">Appetizers</th>
+            <th colspan="2">Main Courses</th>
+            <th colspan="2">Desserts</th>
+        </tr>
+        <tr bgcolor = "white">
+            <td>Caesar Salad</td>
+            <td>$12</td>
+            <td>Steak and Fries</td>
+            <td>$25</td>
+            <td>Chocolate Cake</td>
+            <td>$8</td>
+        </tr>
+        <tr bgcolor = "white">
+            <td>Garlic Bread</td>
+            <td>$5</td>
+            <td>Chicken Parmesan</td>
+            <td>$18</td>
+            <td>Ice Cream Sundae</td>
+            <td>$6</td>
+        </tr>
+        <tr bgcolor = "white">
+            <td colspan="2"></td>
+            <td>Vegetarian Lasagna</td>
+            <td>$15</td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+</body>
+</html>
